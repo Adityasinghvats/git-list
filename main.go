@@ -91,7 +91,7 @@ func fetchBranches() tea.Cmd {
 		cmd := exec.Command("git", "branch", "-a")
 		var outb, errb bytes.Buffer
 		cmd.Stdout = &outb
-		cmd.Stdout = &errb
+		cmd.Stderr = &errb
 		err := cmd.Run()
 
 		if err != nil {
