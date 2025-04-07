@@ -6,6 +6,7 @@ import (
 	"os"
 	"os/exec"
 	"strings"
+	"time"
 
 	"github.com/charmbracelet/bubbles/list"
 	"github.com/charmbracelet/bubbles/spinner"
@@ -88,6 +89,7 @@ func initialModel() model {
 
 func fetchBranches() tea.Cmd {
 	return func() tea.Msg {
+		time.Sleep(1 * time.Second)
 		cmd := exec.Command("git", "branch", "-a")
 		var outb, errb bytes.Buffer
 		cmd.Stdout = &outb
