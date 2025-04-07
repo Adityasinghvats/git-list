@@ -261,7 +261,7 @@ func main() {
 	}
 
 	m := initialModel()
-	p := tea.NewProgram(m, tea.WithAltScreen()) // Use AltScreen for cleaner exit
+	p := tea.NewProgram(m, tea.WithAltScreen())
 
 	if _, err := p.Run(); err != nil {
 		fmt.Printf("Alas, there's been an error: %v", err)
