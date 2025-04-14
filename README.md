@@ -3,10 +3,10 @@
 
 ## Get the project
 ```bash
-git clone https://github.com/Adityasinghvats/go-git-cli.git
+git clone https://github.com/Adityasinghvats/git-list.git
 ```
 ```bash
-cd go-git-cli
+cd git-list
 ```
 - Run the program
 ```bash
